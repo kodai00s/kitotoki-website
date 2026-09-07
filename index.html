@@ -8,9 +8,117 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
+
+<svg class="icon-sprite" aria-hidden="true">
+<defs>
+
+<symbol id="ic-house-tree" viewBox="0 0 48 48">
+  <path d="M8 26 L20 13 L32 26" />
+  <path d="M11 26 V38" /><path d="M29 26 V38" />
+  <path d="M7 38 H33" />
+  <path d="M41 40 L33 17" />
+  <path d="M36 24 L41 20" /><path d="M34 30 L40 27" />
+</symbol>
+
+<symbol id="ic-narrow" viewBox="0 0 48 48">
+  <path d="M10 6 V42" /><path d="M38 6 V42" />
+  <path d="M24 38 V13" />
+  <path d="M24 20 L18 15" /><path d="M24 26 L30 21" />
+</symbol>
+
+<symbol id="ic-boundary" viewBox="0 0 48 48">
+  <path d="M24 5 V43" stroke-dasharray="3 4" />
+  <path d="M9 42 L15 28" />
+  <path d="M15 28 L36 15" />
+  <path d="M31 17 L36 15 L35 21" />
+</symbol>
+
+<symbol id="ic-storm" viewBox="0 0 48 48">
+  <path d="M8 30 L39 21" />
+  <path d="M6 27 L11 33" />
+  <path d="M13 10 Q20 5 27 10" />
+  <path d="M21 15 Q28 10 35 15" />
+</symbol>
+
+<symbol id="ic-prune-tree" viewBox="0 0 48 48">
+  <path d="M24 42 V10" />
+  <path d="M24 16 L33 10" />
+  <path d="M24 24 L14 18" />
+  <path d="M24 32 L32 27 M30 24 L32 27 L29 29" />
+</symbol>
+
+<symbol id="ic-haul" viewBox="0 0 48 48">
+  <circle cx="12" cy="30" r="6" /><circle cx="12" cy="18" r="6" />
+  <path d="M24 24 H40" /><path d="M35 19 L40 24 L35 29" />
+</symbol>
+
+<symbol id="ic-rigging" viewBox="0 0 48 48">
+  <path d="M24 42 V10" />
+  <circle cx="24" cy="10" r="2.5" />
+  <path d="M24 10 L38 34" />
+  <circle cx="38" cy="34" r="2" />
+</symbol>
+
+<symbol id="ic-felling" viewBox="0 0 48 48">
+  <path d="M20 41 V11" />
+  <path d="M20 28 L27 31.5 L20 35" />
+  <path d="M30 13 L39 21" />
+  <path d="M32 13 L39 21 L35 23" />
+</symbol>
+
+<symbol id="ic-shears" viewBox="0 0 48 48">
+  <path d="M22 42 V10" />
+  <path d="M22 22 L36 10" />
+  <path d="M26 15 L32 21" /><path d="M26 21 L32 15" />
+</symbol>
+
+<symbol id="ic-thinning" viewBox="0 0 48 48">
+  <path d="M12 40 V20" /><path d="M36 40 V20" />
+  <path d="M24 40 V20" stroke-dasharray="3 4" />
+  <path d="M8 40 H16" /><path d="M32 40 H40" /><path d="M20 40 H28" stroke-dasharray="3 4"/>
+</symbol>
+
+<symbol id="ic-fallen" viewBox="0 0 48 48">
+  <path d="M6 32 L40 24" />
+  <path d="M15 27 V33" /><path d="M24 25 V31" /><path d="M33 25 V29" />
+</symbol>
+
+<symbol id="ic-height" viewBox="0 0 48 48">
+  <path d="M14 12 H20" /><path d="M14 38 H20" /><path d="M17 12 V38" />
+  <path d="M28 40 V10" /><path d="M28 18 L34 13" /><path d="M28 26 L22 21" />
+</symbol>
+
+<symbol id="ic-count" viewBox="0 0 48 48">
+  <path d="M16 34 V16" /><path d="M24 34 V16" /><path d="M32 34 V16" />
+</symbol>
+
+<symbol id="ic-slope" viewBox="0 0 48 48">
+  <path d="M7 36 L41 20" />
+  <path d="M25 27 V11" /><path d="M25 17 L31 12" />
+</symbol>
+
+<symbol id="ic-distance" viewBox="0 0 48 48">
+  <circle cx="10" cy="24" r="3" /><circle cx="38" cy="24" r="3" />
+  <path d="M15 24 H33" stroke-dasharray="3 4" />
+  <path d="M10 19 V29" /><path d="M38 19 V29" />
+</symbol>
+
+<symbol id="ic-urgency" viewBox="0 0 48 48">
+  <circle cx="24" cy="24" r="15" />
+  <path d="M24 24 V13" /><path d="M24 24 L32 29" />
+</symbol>
+
+<symbol id="ic-camera" viewBox="0 0 48 48">
+  <path d="M18 16 L20 11 H28 L30 16" />
+  <path d="M8 16 H40 V38 H8 Z" />
+  <circle cx="24" cy="27" r="7" />
+</symbol>
+
+</defs>
+</svg>
 
 <a class="skip-link" href="#main">本文へ移動</a>
 
@@ -61,12 +169,12 @@
       <h2 class="band-title">こんなお困りごとに対応します</h2>
       <p class="band-desc">実際に現場で多いご相談です。無理な作業はお引き受けせず、状況を確認したうえでご案内します。</p>
       <ul class="tag-grid">
-        <li class="tag-card"><span class="cut-mark" aria-hidden="true"></span><h3>建物や屋根に近い危険木</h3><p>倒れる方向を制御できない位置にある木を、上から順番に下ろします。</p></li>
-        <li class="tag-card"><span class="cut-mark" aria-hidden="true"></span><h3>車が入れない狭い場所</h3><p>重機を使わず、ロープと人力での搬出が必要な現場に対応します。</p></li>
-        <li class="tag-card"><span class="cut-mark" aria-hidden="true"></span><h3>境界を越えた枝</h3><p>隣地や道路にはみ出した枝の伐採・処理をご相談いただけます。</p></li>
-        <li class="tag-card"><span class="cut-mark" aria-hidden="true"></span><h3>台風・積雪による倒木</h3><p>風雪で倒れた木、傾いた木の緊急処理にも対応します。</p></li>
-        <li class="tag-card"><span class="cut-mark" aria-hidden="true"></span><h3>枝払い・間伐・除伐</h3><p>防風林や敷地林の込み合った枝や木の整理を承ります。</p></li>
-        <li class="tag-card"><span class="cut-mark" aria-hidden="true"></span><h3>伐採後の搬出・処分</h3><p>切った木をその場に残さず、搬出・処分までまとめてご依頼いただけます。</p></li>
+        <li class="tag-card"><svg class="tag-icon" aria-hidden="true"><use href="#ic-house-tree"></use></svg><h3>建物や屋根に近い危険木</h3><p>倒れる方向を制御できない位置にある木を、上から順番に下ろします。</p></li>
+        <li class="tag-card"><svg class="tag-icon" aria-hidden="true"><use href="#ic-narrow"></use></svg><h3>車が入れない狭い場所</h3><p>重機を使わず、ロープと人力での搬出が必要な現場に対応します。</p></li>
+        <li class="tag-card"><svg class="tag-icon" aria-hidden="true"><use href="#ic-boundary"></use></svg><h3>境界を越えた枝</h3><p>隣地や道路にはみ出した枝の伐採・処理をご相談いただけます。</p></li>
+        <li class="tag-card"><svg class="tag-icon" aria-hidden="true"><use href="#ic-storm"></use></svg><h3>台風・積雪による倒木</h3><p>風雪で倒れた木、傾いた木の緊急処理にも対応します。</p></li>
+        <li class="tag-card"><svg class="tag-icon" aria-hidden="true"><use href="#ic-prune-tree"></use></svg><h3>枝払い・間伐・除伐</h3><p>防風林や敷地林の込み合った枝や木の整理を承ります。</p></li>
+        <li class="tag-card"><svg class="tag-icon" aria-hidden="true"><use href="#ic-haul"></use></svg><h3>伐採後の搬出・処分</h3><p>切った木をその場に残さず、搬出・処分までまとめてご依頼いただけます。</p></li>
       </ul>
     </div>
   </section>
@@ -77,30 +185,17 @@
         <h2 class="band-title">事業内容</h2>
         <p class="band-desc">木を「倒す」だけでなく、「安全に下ろす」ための技術で対応します。個人のお宅から農地の防風林まで、規模を問わずご相談ください。</p>
         <dl class="service-list">
-          <div class="service-item"><dt>特殊伐採</dt><dd>ロープアクセスとリギングにより、木を吊りながら少しずつ下ろす作業です。</dd></div>
-          <div class="service-item"><dt>通常伐採</dt><dd>周囲に十分な空間がある木の伐採です。</dd></div>
-          <div class="service-item"><dt>枝下ろし・剪定</dt><dd>樹形を整える剪定から、越境枝の枝下ろしまで対応します。</dd></div>
-          <div class="service-item"><dt>間伐・除伐</dt><dd>込み合った林地の木を間引き、健全な状態に整えます。</dd></div>
-          <div class="service-item"><dt>倒木処理</dt><dd>すでに倒れてしまった木の撤去・処理を行います。</dd></div>
-          <div class="service-item"><dt>搬出・処分</dt><dd>切った木材の搬出、処分、チップ化までご相談いただけます。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-rigging"></use></svg><dt>特殊伐採</dt><dd>ロープアクセスとリギングにより、木を吊りながら少しずつ下ろす作業です。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-felling"></use></svg><dt>通常伐採</dt><dd>周囲に十分な空間がある木の伐採です。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-shears"></use></svg><dt>枝下ろし・剪定</dt><dd>樹形を整える剪定から、越境枝の枝下ろしまで対応します。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-thinning"></use></svg><dt>間伐・除伐</dt><dd>込み合った林地の木を間引き、健全な状態に整えます。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-fallen"></use></svg><dt>倒木処理</dt><dd>すでに倒れてしまった木の撤去・処理を行います。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-haul"></use></svg><dt>搬出・処分</dt><dd>切った木材の搬出、処分、チップ化までご相談いただけます。</dd></div>
         </dl>
       </div>
       <div class="services-visual">
         <img src="images/pine-forest.jpg" alt="十勝の針葉樹林" loading="lazy">
       </div>
-    </div>
-  </section>
-
-  <section class="band" id="why">
-    <div class="wrap">
-      <h2 class="band-title">選ばれる理由</h2>
-      <p class="sample-note">※ 資格・保険・機材などの詳細は準備中です。確定したものから順に掲載します。</p>
-      <ul class="why-grid">
-        <li class="why-card"><h3>保有資格</h3><p class="placeholder">［保有資格をここに記載］</p></li>
-        <li class="why-card"><h3>加入保険</h3><p class="placeholder">［加入している保険をここに記載］</p></li>
-        <li class="why-card"><h3>使用機材</h3><p class="placeholder">［使用機材をここに記載］</p></li>
-        <li class="why-card"><h3>地域での経験</h3><p class="placeholder">［十勝での対応実績をここに記載］</p></li>
-      </ul>
     </div>
   </section>
 
@@ -125,9 +220,9 @@
       <h2 class="band-title">施工事例</h2>
       <p class="sample-note">※ 施工事例は準備中です。作業前後の写真とあわせて、掲載許可をいただいたものから公開します。</p>
       <ul class="works-grid">
-        <li class="work-card work-card-empty"><span class="work-tag">準備中</span><p>市町村・依頼内容・作業結果を、写真とあわせて近日公開します。</p></li>
-        <li class="work-card work-card-empty"><span class="work-tag">準備中</span><p>市町村・依頼内容・作業結果を、写真とあわせて近日公開します。</p></li>
-        <li class="work-card work-card-empty"><span class="work-tag">準備中</span><p>市町村・依頼内容・作業結果を、写真とあわせて近日公開します。</p></li>
+        <li class="work-card work-card-empty"><svg class="work-icon" aria-hidden="true"><use href="#ic-camera"></use></svg><span class="work-tag">準備中</span><p>市町村・依頼内容・作業結果を、写真とあわせて近日公開します。</p></li>
+        <li class="work-card work-card-empty"><svg class="work-icon" aria-hidden="true"><use href="#ic-camera"></use></svg><span class="work-tag">準備中</span><p>市町村・依頼内容・作業結果を、写真とあわせて近日公開します。</p></li>
+        <li class="work-card work-card-empty"><svg class="work-icon" aria-hidden="true"><use href="#ic-camera"></use></svg><span class="work-tag">準備中</span><p>市町村・依頼内容・作業結果を、写真とあわせて近日公開します。</p></li>
       </ul>
     </div>
   </section>
@@ -145,13 +240,13 @@
       <h2 class="band-title">料金について</h2>
       <p class="band-desc">木の状態によって作業方法が変わるため、一律の料金は設定していません。現地調査のうえ、次のような要素からお見積もりします。</p>
       <ul class="factor-list">
-        <li>木の高さ・幹の太さ</li>
-        <li>本数</li>
-        <li>傾斜・生育状況</li>
-        <li>建物・道路・電線との距離</li>
-        <li>重機や車両の進入可否</li>
-        <li>搬出・処分の有無</li>
-        <li>緊急性</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-height"></use></svg>木の高さ・幹の太さ</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-count"></use></svg>本数</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-slope"></use></svg>傾斜・生育状況</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-distance"></use></svg>建物・道路・電線との距離</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-narrow"></use></svg>重機や車両の進入可否</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-haul"></use></svg>搬出・処分の有無</li>
+        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-urgency"></use></svg>緊急性</li>
       </ul>
       <p class="sample-note">現地調査とお見積もりは無料です。</p>
     </div>
@@ -195,6 +290,7 @@
       <h2 class="band-title">よくあるご質問</h2>
       <div class="accordion">
         <details class="qa"><summary>見積もりや現地調査は無料ですか</summary><p>はい、無料です。まずはお気軽にお問い合わせください。</p></details>
+        <details class="qa"><summary>保険には加入していますか</summary><p class="placeholder-inline">加入している保険の詳細は、現在確認中です。確定次第、こちらに掲載します。</p></details>
         <details class="qa"><summary>写真だけで見積もりできますか</summary><p>概算のご案内は可能ですが、正式な金額は現地調査のうえでお伝えします。</p></details>
         <details class="qa"><summary>狭い場所でも作業できますか</summary><p>はい。重機が入れない場所は、ロープを使った特殊伐採で対応します。</p></details>
         <details class="qa"><summary>木や枝の処分もお願いできますか</summary><p>はい、搬出・処分・チップ化までまとめてご依頼いただけます。</p></details>
