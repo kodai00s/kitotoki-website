@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
@@ -55,13 +55,6 @@
   <path d="M24 24 H40" /><path d="M35 19 L40 24 L35 29" />
 </symbol>
 
-<symbol id="ic-rigging" viewBox="0 0 48 48">
-  <path d="M24 42 V10" />
-  <circle cx="24" cy="10" r="2.5" />
-  <path d="M24 10 L38 34" />
-  <circle cx="38" cy="34" r="2" />
-</symbol>
-
 <symbol id="ic-felling" viewBox="0 0 48 48">
   <path d="M20 41 V11" />
   <path d="M20 28 L27 31.5 L20 35" />
@@ -75,46 +68,21 @@
   <path d="M26 15 L32 21" /><path d="M26 21 L32 15" />
 </symbol>
 
-<symbol id="ic-thinning" viewBox="0 0 48 48">
-  <path d="M12 40 V20" /><path d="M36 40 V20" />
-  <path d="M24 40 V20" stroke-dasharray="3 4" />
-  <path d="M8 40 H16" /><path d="M32 40 H40" /><path d="M20 40 H28" stroke-dasharray="3 4"/>
-</symbol>
-
 <symbol id="ic-fallen" viewBox="0 0 48 48">
   <path d="M6 32 L40 24" />
   <path d="M15 27 V33" /><path d="M24 25 V31" /><path d="M33 25 V29" />
-</symbol>
-
-<symbol id="ic-height" viewBox="0 0 48 48">
-  <path d="M14 12 H20" /><path d="M14 38 H20" /><path d="M17 12 V38" />
-  <path d="M28 40 V10" /><path d="M28 18 L34 13" /><path d="M28 26 L22 21" />
-</symbol>
-
-<symbol id="ic-count" viewBox="0 0 48 48">
-  <path d="M16 34 V16" /><path d="M24 34 V16" /><path d="M32 34 V16" />
-</symbol>
-
-<symbol id="ic-slope" viewBox="0 0 48 48">
-  <path d="M7 36 L41 20" />
-  <path d="M25 27 V11" /><path d="M25 17 L31 12" />
-</symbol>
-
-<symbol id="ic-distance" viewBox="0 0 48 48">
-  <circle cx="10" cy="24" r="3" /><circle cx="38" cy="24" r="3" />
-  <path d="M15 24 H33" stroke-dasharray="3 4" />
-  <path d="M10 19 V29" /><path d="M38 19 V29" />
-</symbol>
-
-<symbol id="ic-urgency" viewBox="0 0 48 48">
-  <circle cx="24" cy="24" r="15" />
-  <path d="M24 24 V13" /><path d="M24 24 L32 29" />
 </symbol>
 
 <symbol id="ic-camera" viewBox="0 0 48 48">
   <path d="M18 16 L20 11 H28 L30 16" />
   <path d="M8 16 H40 V38 H8 Z" />
   <circle cx="24" cy="27" r="7" />
+</symbol>
+
+<symbol id="ic-grass" viewBox="0 0 48 48">
+  <path d="M14 38 Q17 26 12 14" />
+  <path d="M24 38 Q27 24 22 12" />
+  <path d="M34 38 Q37 26 32 16" />
 </symbol>
 
 </defs>
@@ -156,7 +124,6 @@
       <p class="hero-lead" data-reveal="3">建物や電線、境界に近い一本も、根元からではなく上から少しずつ。<br>ロープと技術で、周りを傷つけずに木を下ろします。</p>
       <div class="hero-actions" data-reveal="4">
         <a href="#contact" class="btn btn-primary">現地調査を申し込む</a>
-        <a href="#concerns" class="btn btn-ghost">できることを見る</a>
       </div>
     </div>
     <svg class="hero-cut" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
@@ -185,12 +152,11 @@
         <h2 class="band-title">事業内容</h2>
         <p class="band-desc">木を「倒す」だけでなく、「安全に下ろす」ための技術で対応します。個人のお宅から農地の防風林まで、規模を問わずご相談ください。</p>
         <dl class="service-list">
-          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-rigging"></use></svg><dt>特殊伐採</dt><dd>ロープアクセスとリギングにより、木を吊りながら少しずつ下ろす作業です。</dd></div>
-          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-felling"></use></svg><dt>通常伐採</dt><dd>周囲に十分な空間がある木の伐採です。</dd></div>
-          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-shears"></use></svg><dt>枝下ろし・剪定</dt><dd>樹形を整える剪定から、越境枝の枝下ろしまで対応します。</dd></div>
-          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-thinning"></use></svg><dt>間伐・除伐</dt><dd>込み合った林地の木を間引き、健全な状態に整えます。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-felling"></use></svg><dt>庭木や敷地内の伐採</dt><dd>手が届かない場所にある木でも、安全に伐採します。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-shears"></use></svg><dt>高所の庭木剪定</dt><dd>手が届かない高い枝も、安全に剪定します。</dd></div>
           <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-fallen"></use></svg><dt>倒木処理</dt><dd>すでに倒れてしまった木の撤去・処理を行います。</dd></div>
-          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-haul"></use></svg><dt>搬出・処分</dt><dd>切った木材の搬出、処分、チップ化までご相談いただけます。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-grass"></use></svg><dt>草刈り</dt><dd>伸びた雑草や敷地内の草刈りも承ります。</dd></div>
+          <div class="service-item"><svg class="service-icon" aria-hidden="true"><use href="#ic-haul"></use></svg><dt>搬出・処分</dt><dd>切った木材の搬出・処分までご相談いただけます。</dd></div>
         </dl>
       </div>
       <div class="services-visual">
@@ -202,15 +168,11 @@
   <section class="band band-dark" id="process">
     <div class="wrap">
       <h2 class="band-title">作業の流れ</h2>
-      <p class="band-desc band-desc-dark">お問い合わせから完了確認まで、7つのステップで進めます。</p>
+      <p class="band-desc band-desc-dark">お問い合わせから作業完了まで、3つのステップで進めます。</p>
       <ol class="steps">
-        <li class="step"><span class="step-num">1</span><div><h3>お問い合わせ</h3><p>フォームまたはお電話でご相談ください。</p></div></li>
-        <li class="step"><span class="step-num">2</span><div><h3>写真・現場情報の確認</h3><p>木の様子が分かる写真があるとスムーズです。</p></div></li>
-        <li class="step"><span class="step-num">3</span><div><h3>現地調査</h3><p>実際の現場を確認し、作業方法を検討します。</p></div></li>
-        <li class="step"><span class="step-num">4</span><div><h3>お見積もり</h3><p>作業内容と金額をご説明します。</p></div></li>
-        <li class="step"><span class="step-num">5</span><div><h3>日程調整</h3><p>ご都合と天候を確認し、作業日を決めます。</p></div></li>
-        <li class="step"><span class="step-num">6</span><div><h3>作業</h3><p>安全を最優先に、計画に沿って進めます。</p></div></li>
-        <li class="step"><span class="step-num">7</span><div><h3>清掃・完了確認</h3><p>現場を片付け、仕上がりをご確認いただきます。</p></div></li>
+        <li class="step"><span class="step-num">1</span><h3>お問い合わせ</h3><p>お問い合わせフォームからご相談ください。</p></li>
+        <li class="step"><span class="step-num">2</span><h3>現地調査</h3><p>実際の現場を確認し、作業方法や日程を検討します。</p><p class="step-note">※十勝管内はお見積り無料です。管外は別途費用が発生する可能性があります。</p></li>
+        <li class="step"><span class="step-num">3</span><h3>作業</h3><p>天候に合わせて進めさせていただきます。</p></li>
       </ol>
     </div>
   </section>
@@ -231,24 +193,21 @@
     <div class="band-photo-img" style="background-image:url('images/forest-path.jpg');"></div>
     <div class="band-photo-scrim"></div>
     <div class="wrap band-photo-inner">
-      <p class="band-photo-text">同じ角度で倒せない木ほど、<br>準備に時間をかけます。</p>
+      <div class="band-photo-text-wrap">
+        <h2 class="band-photo-title">木のことでお困りではありませんか</h2>
+        <p class="band-photo-text">倒れそうな木、境界からはみ出た枝など、些細なことでもまずはご相談ください。</p>
+      </div>
+      <a href="#contact" class="btn btn-primary">現地調査を申し込む</a>
     </div>
   </section>
 
   <section class="band band-alt" id="pricing">
     <div class="wrap">
       <h2 class="band-title">料金について</h2>
-      <p class="band-desc">木の状態によって作業方法が変わるため、一律の料金は設定していません。現地調査のうえ、次のような要素からお見積もりします。</p>
-      <ul class="factor-list">
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-height"></use></svg>木の高さ・幹の太さ</li>
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-count"></use></svg>本数</li>
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-slope"></use></svg>傾斜・生育状況</li>
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-distance"></use></svg>建物・道路・電線との距離</li>
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-narrow"></use></svg>重機や車両の進入可否</li>
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-haul"></use></svg>搬出・処分の有無</li>
-        <li><svg class="factor-icon" aria-hidden="true"><use href="#ic-urgency"></use></svg>緊急性</li>
+      <ul class="pricing-list">
+        <li>十勝管内の現地調査とお見積りは無料です。管外は別途費用が発生する可能性があります。</li>
+        <li>木の状態によって作業方法が変わるため一律の料金は設定しておりません。現地調査のうえ、お見積りいたします。</li>
       </ul>
-      <p class="sample-note">現地調査とお見積もりは無料です。</p>
     </div>
   </section>
 
@@ -256,8 +215,7 @@
     <div class="wrap area-inner">
       <div class="area-text">
         <h2 class="band-title">対応地域</h2>
-        <p class="band-desc">現在は北海道・十勝エリアを対応地域としています（仮）。市町村単位の詳細は確定次第、随時更新します。</p>
-        <p class="sample-note">※ 対応地域は今後変更・拡大する場合があります。まずはお気軽にお問い合わせください。</p>
+        <p class="band-desc">北海道・十勝エリアを中心に活動しています。十勝管外の方もお気軽にお問い合わせください。</p>
       </div>
       <div class="area-map">
         <svg viewBox="17 24 575 494" role="img" aria-labelledby="mapTitle mapDesc" class="hokkaido-map">
@@ -318,42 +276,35 @@
       <div class="contact-intro">
         <h2 class="band-title">お問い合わせ</h2>
         <p class="band-desc">下記フォームよりご連絡ください。内容を確認のうえ、折り返しご連絡いたします。</p>
-        <p class="sample-note">お電話でのご相談は、受付時間の確定後にこちらへ掲載します。</p>
       </div>
       <form class="contact-form" id="contactForm" novalidate>
         <div class="form-row">
-          <label for="name">お名前 <span class="req">必須</span></label>
+          <label for="name">お名前/法人名 <span class="req">必須</span></label>
           <input type="text" id="name" name="name" autocomplete="name" required>
         </div>
         <div class="form-row">
-          <label for="contactMethod">メールアドレスまたは電話番号 <span class="req">必須</span></label>
-          <input type="text" id="contactMethod" name="contactMethod" autocomplete="email" required>
+          <label for="email">メールアドレス <span class="req">必須</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel" autocomplete="tel">
         </div>
         <div class="form-row">
           <label for="area">対象地域・市町村 <span class="req">必須</span></label>
           <input type="text" id="area" name="area" placeholder="例：帯広市" required>
         </div>
-        <div class="form-row form-row-2col">
-          <div>
-            <label for="service">作業の種類</label>
-            <select id="service" name="service">
-              <option value="">選択してください</option>
-              <option>特殊伐採・危険木の処理</option>
-              <option>通常伐採</option>
-              <option>枝下ろし・剪定</option>
-              <option>間伐・除伐</option>
-              <option>倒木処理</option>
-              <option>その他</option>
-            </select>
-          </div>
-          <div>
-            <label for="preferredContact">希望する連絡方法</label>
-            <select id="preferredContact" name="preferredContact">
-              <option value="">指定なし</option>
-              <option>電話</option>
-              <option>メール</option>
-            </select>
-          </div>
+        <div class="form-row">
+          <label for="service">主な作業の種類</label>
+          <select id="service" name="service">
+            <option value="">選択してください</option>
+            <option>庭木や敷地内の伐採</option>
+            <option>高所の庭木剪定</option>
+            <option>倒木処理</option>
+            <option>草刈り</option>
+            <option>搬出・処分</option>
+            <option>その他</option>
+          </select>
         </div>
         <div class="form-row">
           <label for="message">お問い合わせ内容 <span class="req">必須</span></label>
