@@ -276,21 +276,18 @@ a { color: inherit; }
 .work-icon { width: 30px; height: 30px; stroke: var(--steel); stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: 0.7; }
 .work-tag { font-size: 0.78rem; color: var(--hazard-deep); font-weight: 700; }
 
-/* photo bands */
-.band-photo, .band-cta { position: relative; padding: clamp(5rem, 12vw, 8rem) 0; overflow: hidden; }
-.band-photo-img, .band-cta-img { position: absolute; inset: 0; background-size: cover; background-position: center; background-attachment: fixed; }
+/* photo band */
+.band-photo { position: relative; padding: clamp(5rem, 12vw, 8rem) 0; overflow: hidden; }
+.band-photo-img { position: absolute; inset: 0; background-size: cover; background-position: center; background-attachment: fixed; }
 .band-photo-scrim { position: absolute; inset: 0; background: rgba(26,42,33,0.62); }
-.band-cta-scrim { position: absolute; inset: 0; background: rgba(26,42,33,0.72); }
-.band-photo-inner, .band-cta-inner { position: relative; z-index: 1; text-align: left; color: var(--snow); }
+.band-photo-inner { position: relative; z-index: 1; text-align: left; color: var(--snow); }
 .band-photo-inner {
   display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
 }
 .band-photo-title { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 2rem); margin: 0 0 0.7rem; }
 .band-photo-text { font-size: 1rem; line-height: 1.8; max-width: 32em; margin: 0; color: #E4EBE6; }
-.band-cta-inner h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3.4vw, 2.2rem); margin: 0 0 1rem; }
-.band-cta-inner p { max-width: 32em; color: #E4EBE6; margin: 0 0 2rem; }
 @media (max-width: 700px) {
-  .band-photo-img, .band-cta-img { background-attachment: scroll; }
+  .band-photo-img { background-attachment: scroll; }
 }
 
 /* pricing */
@@ -333,7 +330,7 @@ a { color: inherit; }
 .form-row-2col > div { display: grid; gap: 0.5rem; }
 label { font-size: 0.9rem; font-weight: 500; }
 .req { color: var(--hazard-deep); font-weight: 700; font-size: 0.78em; }
-input[type="text"], input[type="email"], select, textarea {
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
   font: inherit; padding: 0.8em 0.9em; border: 1px solid var(--line); border-radius: 2px;
   background: var(--snow); color: var(--ink); width: 100%;
 }
