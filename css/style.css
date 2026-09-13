@@ -247,11 +247,6 @@ a { color: inherit; }
   align-items: stretch;
 }
 .step { position: relative; display: flex; flex-direction: column; }
-.step:not(:last-child)::after {
-  content: "";
-  position: absolute; top: 20px; left: 100%; width: var(--gap); height: 1px;
-  background: var(--line-dark);
-}
 .step-num {
   flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
   background: var(--pine-deep); border: 1px solid var(--hazard);
@@ -390,7 +385,6 @@ input:focus, select:focus, textarea:focus { border-color: var(--hazard); }
   .form-row-2col { grid-template-columns: 1fr; }
   .hero-inner { padding-top: 4.5rem; padding-bottom: 4.5rem; }
   .steps { grid-template-columns: 1fr; gap: 2.2rem; }
-  .step:not(:last-child)::after { display: none; }
   .band-photo-inner { flex-direction: column; align-items: flex-start; }
 }
 
