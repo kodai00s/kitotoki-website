@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -83,6 +83,17 @@
   <path d="M14 38 Q17 26 12 14" />
   <path d="M24 38 Q27 24 22 12" />
   <path d="M34 38 Q37 26 32 16" />
+</symbol>
+
+<symbol id="ic-contact" viewBox="0 0 48 48">
+  <path d="M8 14 H40 V34 H8 Z" />
+  <path d="M8 14 L24 27 L40 14" />
+</symbol>
+
+<symbol id="ic-survey" viewBox="0 0 48 48">
+  <path d="M14 12 H34 V38 H14 Z" />
+  <path d="M19 12 V9 H29 V12" />
+  <path d="M19 20 H29" /><path d="M19 26 H29" /><path d="M19 32 H24" />
 </symbol>
 
 </defs>
@@ -165,14 +176,17 @@
     </div>
   </section>
 
-  <section class="band band-dark" id="process">
-    <div class="wrap">
+  <section class="band band-dark process-band" id="process">
+    <div class="process-bg" style="background-image:url('images/sunlit-forest.jpg');"></div>
+    <div class="process-scrim"></div>
+    <div class="wrap process-content">
       <h2 class="band-title">作業の流れ</h2>
       <p class="band-desc band-desc-dark">お問い合わせから作業完了まで、3つのステップで進めます。</p>
       <ol class="steps">
         <li class="step">
           <span class="step-num">1</span>
           <div class="step-card">
+            <svg class="step-icon" aria-hidden="true"><use href="#ic-contact"></use></svg>
             <h3>お問い合わせ</h3>
             <p>お問い合わせフォームから、木の状態や気になる点をご相談ください。担当より折り返しご連絡いたします。</p>
           </div>
@@ -180,6 +194,7 @@
         <li class="step">
           <span class="step-num">2</span>
           <div class="step-card">
+            <svg class="step-icon" aria-hidden="true"><use href="#ic-survey"></use></svg>
             <h3>現地調査</h3>
             <p>実際の現場を確認し、木の高さや周囲の状況に合わせて、作業方法と日程を検討します。</p>
             <p class="step-note">※十勝管内はお見積り無料です。管外は別途費用が発生する可能性があります。</p>
@@ -188,6 +203,7 @@
         <li class="step">
           <span class="step-num">3</span>
           <div class="step-card">
+            <svg class="step-icon" aria-hidden="true"><use href="#ic-felling"></use></svg>
             <h3>作業</h3>
             <p>安全を最優先に、天候を見ながら計画に沿って進めます。作業後は周辺の清掃まで行います。</p>
           </div>
