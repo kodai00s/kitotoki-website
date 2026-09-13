@@ -246,7 +246,7 @@ a { color: inherit; }
   position: absolute; inset: 0;
   background-size: cover; background-position: center; background-attachment: fixed;
 }
-.process-scrim { position: absolute; inset: 0; background: rgba(26, 42, 33, 0.84); }
+.process-scrim { position: absolute; inset: 0; background: rgba(20, 32, 25, 0.94); }
 .process-content { position: relative; z-index: 1; }
 @media (max-width: 700px) {
   .process-bg { background-attachment: scroll; }
