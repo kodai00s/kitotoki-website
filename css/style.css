@@ -244,8 +244,9 @@ a { color: inherit; }
 .steps {
   list-style: none; margin: 0; padding: 0;
   display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap);
+  align-items: stretch;
 }
-.step { position: relative; }
+.step { position: relative; display: flex; flex-direction: column; }
 .step:not(:last-child)::after {
   content: "";
   position: absolute; top: 20px; left: 100%; width: var(--gap); height: 1px;
@@ -257,11 +258,18 @@ a { color: inherit; }
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display); font-weight: 600;
   position: relative; z-index: 1;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.3rem;
 }
-.step h3 { margin: 0.1rem 0 0.35rem; font-size: 1.05rem; }
+.step-card {
+  flex: 1;
+  display: flex; flex-direction: column;
+  background: rgba(250, 249, 245, 0.05);
+  border-top: 2px solid var(--hazard);
+  padding: 1.6rem 1.5rem;
+}
+.step h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
 .step p { margin: 0; color: #C7D2CB; font-size: 0.94rem; }
-.step-note { margin-top: 0.6rem !important; font-size: 0.82rem !important; color: #A8B6AF !important; }
+.step-note { margin-top: auto !important; padding-top: 0.9rem !important; font-size: 0.82rem !important; color: #A8B6AF !important; }
 
 /* works */
 .works-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
