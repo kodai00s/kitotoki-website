@@ -95,14 +95,14 @@ a { color: inherit; }
 .btn-primary {
   background: var(--hazard); color: var(--snow);
   padding: 0.9em 1.6em; font-size: 0.98rem; font-weight: 700;
-  border-radius: 2px;
+  border-radius: 8px;
   transition: background 0.15s ease, transform 0.15s ease;
 }
 .btn-primary:hover { background: var(--hazard-deep); }
 .btn-primary:active { transform: translateY(1px); }
 .btn-ghost {
   padding: 0.9em 1.5em; font-size: 0.98rem; font-weight: 500;
-  color: var(--ink); border: 1px solid currentColor; border-radius: 2px;
+  color: var(--ink); border: 1px solid currentColor; border-radius: 8px;
   transition: background 0.15s ease;
 }
 .btn-ghost:hover { background: rgba(28,36,32,0.06); }
@@ -210,15 +210,15 @@ a { color: inherit; }
 /* concerns */
 .tag-grid {
   list-style: none; margin: 0; padding: 0;
-  display: grid; gap: 1px;
+  display: grid; gap: var(--gap);
   grid-template-columns: repeat(3, 1fr);
-  background: var(--line);
-  border: 1px solid var(--line);
 }
 .tag-card {
   background: var(--paper);
   padding: 1.9rem 1.8rem;
   position: relative;
+  border: 1px solid var(--line);
+  border-radius: 14px;
 }
 .tag-icon { width: 40px; height: 40px; stroke: var(--hazard-deep); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; display: block; margin-bottom: 0.9rem; }
 .tag-card h3 { font-size: 1.05rem; margin: 0 0 0.5rem; }
@@ -237,7 +237,7 @@ a { color: inherit; }
 .service-icon { width: 28px; height: 28px; stroke: var(--hazard-deep); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; margin-top: 0.1rem; }
 .service-item dt { font-weight: 700; }
 .service-item dd { margin: 0; color: var(--steel); }
-.services-visual img { border-radius: 2px; }
+.services-visual img { border-radius: 14px; }
 .placeholder-inline { color: var(--steel); }
 
 /* process */
@@ -273,6 +273,7 @@ a { color: inherit; }
   background: rgba(216, 72, 15, 0.08);
   border-top: 2px solid var(--hazard);
   padding: 1.7rem 1.6rem;
+  border-radius: 14px;
 }
 .step-icon { width: 30px; height: 30px; stroke: var(--hazard); stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 1rem; }
 .step h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
@@ -288,6 +289,7 @@ a { color: inherit; }
   font-size: 0.92rem;
   min-height: 160px;
   display: flex; flex-direction: column; gap: 0.7rem;
+  border-radius: 14px;
 }
 .work-icon { width: 30px; height: 30px; stroke: var(--steel); stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: 0.7; }
 .work-tag { font-size: 0.78rem; color: var(--hazard-deep); font-weight: 700; }
@@ -318,6 +320,7 @@ a { color: inherit; }
   font-size: 1.02rem;
   line-height: 1.85;
   color: var(--ink);
+  border-radius: 14px;
 }
 
 /* area */
@@ -347,7 +350,7 @@ a { color: inherit; }
 label { font-size: 0.9rem; font-weight: 500; }
 .req { color: var(--hazard-deep); font-weight: 700; font-size: 0.78em; }
 input[type="text"], input[type="email"], input[type="tel"], select, textarea {
-  font: inherit; padding: 0.8em 0.9em; border: 1px solid var(--line); border-radius: 2px;
+  font: inherit; padding: 0.8em 0.9em; border: 1px solid var(--line); border-radius: 8px;
   background: var(--snow); color: var(--ink); width: 100%;
 }
 input:focus, select:focus, textarea:focus { border-color: var(--hazard); }
