@@ -407,3 +407,238 @@ input:focus, select:focus, textarea:focus { border-color: var(--hazard); }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* 元のデザインを維持し、長い説明とスマホの縦余白だけを整理 */
+html { scroll-padding-top: 92px; }
+.pricing-summary { max-width: 48em; margin: 0 0 .75rem; font-size: 1.02rem; }
+.pricing-note { margin: 0; color: var(--steel); font-size: .92rem; }
+@media (max-width: 720px) {
+  .nav { display: none; transform: none; }
+  .nav.is-open { display: flex; }
+  .process-band { padding: 2.8rem 0; }
+  .process-band .band-desc { margin-bottom: 1.4rem; font-size: .94rem; }
+  .steps { gap: 0; }
+  .step { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: .9rem; padding: 1rem 0; border-top: 1px solid var(--line-dark); }
+  .step-num { width: 30px; height: 30px; margin: .15rem 0 0; box-shadow: none; color: var(--snow); font-size: .85rem; }
+  .step-card { padding: 0; border: 0; background: none; border-radius: 0; }
+  .step-icon { display: none; }
+  .step h3 { font-size: 1rem; margin-bottom: .3rem; }
+  .step p { font-size: .9rem; line-height: 1.7; }
+}
+
+/* サービスを最初のスクロールで伝える構成 */
+.hero { min-height: 560px; min-height: min(620px, 76svh); align-items: center; }
+.hero-inner { width: 100%; max-width: 900px; padding-top: 3.5rem; padding-bottom: 4rem; }
+.hero-services-link { display: inline-flex; gap: 1.2rem; align-items: center; margin-top: 1.25rem; color: var(--snow); font-size: .85rem; text-decoration: none; border-bottom: 1px solid rgba(250,249,245,.5); padding: .35rem 0; min-height: 44px; }
+.services-heading { display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-bottom: 1.8rem; }
+.section-label { font-size: .78rem; letter-spacing: .1em; color: var(--hazard-deep); margin: 0 0 .3rem; }
+.services-heading .band-title { margin: 0; }
+.services-heading .band-desc { margin: 0; font-size: .95rem; }
+.service-cards { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 1rem; }
+.service-card { display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; grid-column: span 2; gap: .5rem; padding: 1.4rem; background: var(--snow); border: 1px solid var(--line); border-radius: 14px; }
+.service-art { width: 160px; height: 120px; margin: 0 auto .4rem; }
+.service-card dt { font-size: 1.1rem; }
+.service-card dd { font-size: .92rem; line-height: 1.8; }
+.service-card-secondary { grid-column: span 3; grid-template-columns: 110px 1fr; grid-template-rows: auto 1fr; column-gap: 1rem; }
+.service-card-secondary .service-art { grid-row: 1/3; width: 110px; height: 90px; align-self: center; margin: 0; }
+.service-card-secondary dt { font-size: 1rem; }
+.services-note { margin: 1.3rem 0 0; color: var(--steel); font-size: .85rem; }
+@media (max-width: 720px) {
+  .hero { min-height: 0; }
+  .hero-inner { padding-top: 2.5rem; padding-bottom: 3rem; }
+  .hero-title { font-size: clamp(1.65rem, 6vw, 2.3rem); margin-bottom: 1rem; }
+  .hero-lead { font-size: .94rem; line-height: 1.8; margin-bottom: 1.3rem; }
+  .kicker { font-size: .78rem; margin-bottom: .8rem; }
+  .hero-services-link { margin-top: .7rem; }
+  #services { padding: 2.4rem 0; }
+  .services-heading { display: block; margin-bottom: 1.3rem; }
+  .services-heading .band-desc { margin-top: .75rem; font-size: .9rem; }
+  .services-heading .band-desc br { display: none; }
+  .service-cards { grid-template-columns: 1fr; gap: .7rem; }
+  .service-card, .service-card-secondary { grid-column: auto; grid-template-columns: 86px minmax(0,1fr); grid-template-rows: auto 1fr; gap: .3rem .85rem; padding: 1rem .9rem; }
+  .service-card .service-art { grid-column: 1; grid-row: 1/3; width: 86px; height: 76px; align-self: center; margin: 0; }
+  .service-card dt { grid-column: 2; grid-row: 1; font-size: 1rem; }
+  .service-card dd { grid-column: 2; grid-row: 2; font-size: .86rem; line-height: 1.7; }
+  .services-note { font-size: .8rem; }
+}
+
+/* 山並み・作業の流れ・プロフィール・相談フォーム */
+.hero-cut { height: 64px; }
+.hero-cut path { fill: var(--paper-alt); }
+.hero-inner { padding-bottom: 5rem; }
+.process-band .step { display: block; padding: 0; border: 0; }
+.process-band .step-card { display: grid; grid-template-columns: 34px minmax(0,1fr); grid-template-rows: auto 1fr; gap: .6rem 1rem; padding: 1.5rem; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.3); border-radius: 14px; height: 100%; }
+.process-band .step-num { grid-column: 1; grid-row: 1; width: 30px; height: 30px; margin: 0; background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.65); box-shadow: none; font-size: .9rem; }
+.process-band .step-icon { display: none; }
+.process-band .step h3 { grid-column: 2; grid-row: 1; align-self: center; margin: 0; }
+.process-band .step p { grid-column: 1/3; grid-row: 2; }
+.area-inner { grid-template-columns: minmax(0,1fr) 260px; gap: 3rem; }
+.area-text .band-desc { margin-bottom: 1rem; font-size: .96rem; }
+.area-map { text-align: center; }
+.hokkaido-map { max-width: 245px; }
+.map-base path { fill: #d4ddd1; stroke: #758875; }
+.map-highlight { fill: #718b6b; stroke: #445e42; }
+.map-dot { fill: #29432e; }
+.area-estimate { margin: 0; font-size: .93rem; color: var(--steel); }
+.area-estimate strong { color: var(--pine); }
+.profile-inner { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: 3.5rem; align-items: center; }
+.profile-photo { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 14px; }
+.profile-name { font-weight: 700; margin: 1rem 0 .25rem; }
+.profile-name span { font-size: .8rem; color: var(--steel); font-weight: 400; margin-left: .7rem; }
+.profile-job { font-size: .85rem; color: var(--steel); margin: 0 0 1.2rem; }
+.profile-text > p:not(.section-label):not(.profile-name):not(.profile-job) { font-size: .96rem; }
+.contact-form { padding: 2rem; border: 1px solid var(--line); border-radius: 14px; background: var(--snow); gap: 1.1rem; }
+.contact-status { margin: 0; padding: .8rem 1rem; border-radius: 8px; background: var(--paper-alt); color: var(--pine); font-size: .85rem; }
+.form-guide { margin: 0; color: var(--steel); font-size: .8rem; }
+.req { display: inline-block; padding: .1em .5em; border-radius: 4px; background: #f4e5dc; }
+input::placeholder, textarea::placeholder { color: #737b75; font-size: .88rem; }
+.contact-form input, .contact-form select, .contact-form textarea { min-width: 0; }
+.checkbox input { width: 19px; height: 19px; flex-shrink: 0; }
+.btn-submit { width: 100%; min-height: 50px; }
+@media (min-width: 721px) and (max-width: 1100px) { .header-inner { gap: .8rem; } .nav { gap: .8rem; } .nav a { font-size: .82rem; } .btn-header { padding: .7em 1em; font-size: .8rem; } }
+@media (max-width: 720px) {
+  .hero-cut { height: 48px; }
+  .hero-inner { padding-bottom: 4rem; }
+  .process-band .steps { gap: .7rem; }
+  .process-band .step-card { padding: 1.1rem; gap: .5rem .8rem; }
+  #area { padding: 2.5rem 0; }
+  .area-inner { display: block; }
+  .area-map { display: none; }
+  .profile-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .profile-photo { max-width: 320px; margin: 0 auto; }
+  .profile-text .band-title { font-size: 1.4rem; }
+  .contact-form { padding: 1.2rem; }
+}
+
+/* 滑らかな稜線、簡潔な手順見出し、胸上のポートレート */
+.process-band .step-card { display: flex; flex-direction: column; gap: .6rem; }
+.process-band .step h3 { align-self: stretch; color: var(--snow); }
+.profile-inner { grid-template-columns: 280px minmax(0,1fr); gap: 3rem; }
+.profile-photo-frame { width: 280px; aspect-ratio: 4 / 3; overflow: hidden; position: relative; border-radius: 14px; }
+.profile-photo-frame .profile-photo { position: absolute; width: 180%; max-width: none; height: auto; aspect-ratio: 1; left: -50%; top: -45%; border-radius: 0; margin: 0; }
+@media (max-width:720px) {
+  .profile-inner { grid-template-columns: 1fr; }
+  .profile-photo-frame { width: 240px; margin: 0 auto; }
+}
+
+/* 質問は左、回答は一段下げて右に */
+.faq-list { max-width: 850px; margin: 1.8rem auto 0; }
+.faq-item { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.faq-item:first-child { padding-top: 0; }
+.faq-item dt { display: flex; align-items: baseline; gap: .75rem; font-weight: 700; font-size: 1rem; }
+.faq-item dd { display: flex; gap: .75rem; margin: .8rem 0 0 auto; width: 85%; color: var(--steel); font-size: .94rem; }
+.faq-item dd p { margin: 0; }
+.faq-mark { color: var(--pine); font-family: var(--font-display); flex-shrink: 0; font-weight: 700; }
+#contact .contact-inner { display: block; max-width: 760px; width: calc(100% - 2.5rem); padding: clamp(1.4rem,4vw,3rem); margin: 0 auto; background: var(--snow); border: 1px solid var(--line); border-radius: 16px; }
+.contact-intro { text-align: center; }
+.contact-intro .band-desc { max-width: 32em; margin: .8rem auto 2rem; font-size: .94rem; }
+#contact .contact-form { background: transparent; border: 0; border-radius: 0; padding: 0; }
+#contact .btn-submit { width: fit-content; max-width: 100%; justify-self: center; padding: .9em 1.8em; min-height: 48px; }
+.form-note:empty { display: none; }
+@media (max-width:720px) {
+  .faq-item { padding: 1.2rem 0; }
+  .faq-item dt { font-size: .94rem; gap: .55rem; }
+  .faq-item dd { width: calc(100% - 1.5rem); font-size: .88rem; gap: .55rem; margin-top: .65rem; }
+}
+
+/* Material Designを参考にした色・形・操作状態の共通ルール */
+:root {
+  --ink: #202d26;
+  --steel: #4c5c53;
+  --hazard: #b64013;
+  --hazard-deep: #92310d;
+  --line: rgba(34,54,41,.20);
+  --radius-card: 16px;
+  --radius-field: 8px;
+  --motion-duration: 220ms;
+  --motion-easing: cubic-bezier(.2,0,0,1);
+}
+body { text-rendering: optimizeLegibility; }
+h1, h2, h3, dt { text-wrap: pretty; }
+.band-title { line-height: 1.5; letter-spacing: .015em; }
+.service-card, .process-band .step-card, .profile-photo-frame, #contact .contact-inner { border-radius: var(--radius-card); }
+.service-card { background: var(--snow); border-color: var(--line); box-shadow: 0 1px 2px rgba(27,45,32,.04); }
+.btn-primary { border-radius: 999px; min-height: 48px; font-weight: 700; letter-spacing: .02em; transition: background var(--motion-duration) var(--motion-easing), box-shadow var(--motion-duration) var(--motion-easing), transform var(--motion-duration) var(--motion-easing); box-shadow: 0 1px 3px rgba(27,45,32,.18); }
+.btn-primary:hover { box-shadow: 0 4px 10px rgba(27,45,32,.2); }
+.btn-primary:active { transform: scale(.98); box-shadow: none; }
+.btn-consult::after { content: '→'; display: inline-block; margin-left: .75em; transition: transform var(--motion-duration) var(--motion-easing); }
+.btn-consult:hover::after, .btn-consult:focus-visible::after { transform: translateX(4px); }
+.nav a { min-height: 48px; display: inline-flex; align-items: center; }
+.nav-toggle { width: 48px; height: 48px; align-items: center; flex-shrink: 0; }
+:focus-visible { outline: 3px solid #466a54; outline-offset: 4px; }
+.band-dark :focus-visible, .hero :focus-visible, .band-photo :focus-visible { outline-color: #fff; }
+input[type="text"], input[type="email"], input[type="tel"], select, textarea { border-radius: var(--radius-field); border-color: #8a988e; background: #fffefa; transition: border-color var(--motion-duration) var(--motion-easing), box-shadow var(--motion-duration) var(--motion-easing); }
+input[type="text"], input[type="email"], input[type="tel"], select { min-height: 48px; }
+input:focus, select:focus, textarea:focus { border-color: #42634d; box-shadow: 0 0 0 1px #42634d; }
+.req { background: #f3e5dd; color: #85320f; border-radius: 4px; }
+.faq-item dt { line-height: 1.7; }
+.faq-item dd { line-height: 1.85; }
+.profile-name span, .profile-job, .services-note { color: var(--steel); }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .btn-consult:hover, .btn-consult:focus-visible { transform: translateY(-2px); }
+}
+@media (prefers-reduced-motion:no-preference) {
+  .hero .btn-consult::after { animation: consult-arrow 1.6s var(--motion-easing) 1s 2; }
+  @keyframes consult-arrow { 0%,70%,100% { transform: translateX(0); } 35% { transform: translateX(5px); } }
+}
+@media (prefers-reduced-motion:reduce) {
+  .btn-consult::after, .btn-consult:hover, .btn-consult:active { animation: none; transform: none; transition: none; }
+}
+
+/* 明るいオレンジは濃い文字と組み合わせる */
+:root { --hazard: #f58a36; --hazard-deep: #d96719; }
+.btn-primary { color: #202d26; }
+.btn-primary:hover { background: #f99b50; }
+.btn-primary:active { background: #eb7c27; }
+.brand-mark { background: var(--hazard); }
+.section-label { color: #8c3f11; }
+.req { color: #85320f; }
+.portfolio-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-card); background: var(--snow); }
+.portfolio-photo { aspect-ratio: 16 / 10; display: flex; flex-direction: column; gap: .7rem; align-items: center; justify-content: center; background: #dce3da; color: var(--steel); font-size: .8rem; }
+.portfolio-photo .work-icon { width: 36px; height: 36px; opacity: .6; }
+.portfolio-copy { padding: 1.1rem 1.3rem; }
+.portfolio-copy h3 { margin: 0; font-size: 1rem; }
+@media (min-width:721px) and (max-width:1100px) { .nav { gap: .65rem; } .nav a { font-size: .78rem; } .brand { white-space: nowrap; } }
+@media (max-width:720px) { .portfolio-grid { gap: 1rem; } .portfolio-photo { aspect-ratio: 2 / 1; } }
+
+/* 木とときの配色：森の緑、生成り、相談を示す山吹色 */
+:root {
+  --paper: #f5f4ee;
+  --paper-alt: #e8ede4;
+  --snow: #fffefa;
+  --ink: #253b30;
+  --steel: #516155;
+  --pine: #2f493a;
+  --pine-deep: #21382b;
+  --hazard: #e8b66a;
+  --hazard-deep: #dba354;
+  --line: rgba(47,73,58,.18);
+}
+.site-header { background: rgba(245,244,238,.97); border-color: var(--line); }
+.brand-mark { background: #52734f; }
+.nav a:hover { border-color: #52734f; }
+.btn-primary { background: var(--hazard); color: #26382d; box-shadow: 0 1px 2px rgba(30,53,36,.12); }
+.btn-primary:hover { background: #edc184; }
+.btn-primary:active { background: #dba354; }
+.section-label { color: #4c6a4a; }
+.service-card, .portfolio-card { background: var(--snow); box-shadow: none; }
+.portfolio-photo { background: #dfe7da; color: #52664f; }
+.hero-scrim { background: linear-gradient(180deg,rgba(22,43,30,.5),rgba(22,43,30,.32) 40%,rgba(22,43,30,.9)); }
+.kicker { color: #e5e9df; }
+.process-scrim { background: rgba(28,49,35,.95); }
+.band-photo-scrim { background: rgba(28,49,35,.7); }
+.req { color: #405a40; background: #e3eadc; }
+.form-note.is-error { color: #a13726; }
+.form-note.is-success { color: #315e3b; }
+input[type="text"], input[type="email"], input[type="tel"], select, textarea { background: #fffefa; border-color: #909e90; }
+.map-base path { fill: #d8e1d1; stroke: #788b74; }
+.map-highlight { fill: #73906a; stroke: #496445; }
+.map-dot { fill: #29432e; }
+
+/* 相談への導線は、澄んだ山吹色に */
+:root { --hazard: #f4b41b; --hazard-deep: #dfa00b; }
+.btn-primary { background: #f4b41b; color: #26382d; }
+.btn-primary:hover { background: #fac344; }
+.btn-primary:active { background: #dfa00b; }
+
+.profile-text h2.profile-name { font-family: var(--font-display); font-size: 1.45rem; line-height: 1.6; margin: .4rem 0 1.3rem; }
